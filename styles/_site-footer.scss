@@ -5,7 +5,6 @@
   padding: 0 20px;
   background-color: $brand-color;
   &-box {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     width: 100%;
@@ -13,7 +12,6 @@
     &-logo,
     &-talkwithus,
     &-whereweare {
-      border: 1px solid orange;
       width: 33%;
       font-weight: 700;
     }

@@ -116,14 +116,12 @@ body {
   background-color: #4d994d;
 }
 .site-footer-box {
-  border: 1px solid black;
   display: flex;
   align-items: center;
   width: 100%;
   margin: 0 auto;
 }
 .site-footer-box-logo, .site-footer-box-talkwithus, .site-footer-box-whereweare {
-  border: 1px solid orange;
   width: 33%;
   font-weight: 700;
 }
@@ -177,7 +175,7 @@ body {
   }
 }
 .page {
-  background-color: #ebebe6;
+  background-color: #f1f0f0;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -191,9 +189,9 @@ h2 {
 }
 
 .portfolio-container-box {
-  border: 1px solid red;
+  background-color: #e0e9e0;
   display: flex;
-  width: 90%;
+  width: 93%;
   height: 400px;
   margin: 0 auto;
 }
@@ -347,20 +345,20 @@ h2 {
   }
 }
 .services-container {
-  border: 1px solid red;
+  background-color: #f1f0f0;
   display: flex;
   justify-content: space-around;
   margin: 5rem;
 }
 
 .services-container-box {
-  border: 1px solid blueviolet;
+  background-color: #e0e9e0;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 300px;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
 .services-container-box .far,
 .services-container-box .fas {
@@ -428,19 +426,19 @@ h2 {
   }
 }
 .news-container {
-  border: 1px solid green;
+  background-color: #f1f0f0;
   display: flex;
   justify-content: space-around;
   margin: 5rem;
 }
 .news-container-box {
-  border: 1px solid black;
+  background-color: #e0e9e0;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 33%;
   height: 300px;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
 .news-container-box-image {
   width: 200px;

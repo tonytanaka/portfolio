@@ -1,0 +1,382 @@
+.page {
+  // min-height: 100vh;
+  background-color: $backcolo-color;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-container-box {
+  border: 1px solid red;
+  display: flex;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+
+  &-image {
+    width: 600px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: fit-content;
+      object-fit: cover;
+    }
+  }
+}
+
+.portfolio-container-box-text-button {
+  display: flex;
+  margin: 3rem auto;
+  padding: 5rem;
+  width: 60%;
+  flex-direction: column;
+  height: auto;
+}
+
+.portfolio-container-box-text-button-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  font-family: $font-stack, monospace;
+  background: $brand-color;
+  color: $text-color;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+  min-width: 100px;
+
+  &:hover {
+    background: $brand-color;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px $brand-color;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    color: #ffffff;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+      color: #ffffff;
+    }
+  }
+}
+// MEDIA QUERIES FOR PORTFOLIO CONTAINER
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-container-box {
+    height: 530px;
+    width: 100%;
+
+    &-image {
+      width: 600px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        height: fit-content;
+        object-fit: cover;
+      }
+    }
+    &-text-button {
+      padding: 0;
+      margin: 11rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-container-box {
+    flex-direction: column;
+    height: 530px;
+    width: 100%;
+
+    &-image {
+      width: auto;
+      height: fit-content;
+      object-fit: cover;
+      img {
+        height: 32vh;
+        width: fit-content;
+      }
+    }
+    &-text-button {
+      padding: 0;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .portfolio-container-box {
+    flex-direction: column;
+    height: 360px;
+    width: 100vw;
+
+    &-image {
+      width: auto;
+      img {
+        height: 22vh;
+      }
+    }
+    &-text-button {
+      padding: 0;
+      margin: 0 auto;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-button {
+        position: relative;
+        top: 25px;
+      }
+      .headline-s {
+        font-size: 12px;
+      }
+      .btn {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .page {
+    width: 100%;
+  }
+  h3 {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    padding: 0 !important;
+  }
+}
+
+// SERVICES
+.services-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+}
+
+.services-container-box {
+  border: 1px solid blueviolet;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+
+  .far,
+  .fas {
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 10rem;
+    color: $text-color;
+  }
+}
+
+.services-container-box-text {
+  display: flex;
+  margin: 1.5rem auto;
+  width: 90%;
+}
+
+.services-container-box-button {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.btn {
+  font-family: $font-stack, monospace;
+  background: $brand-color;
+  color: $text-color;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.7rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  // width: auto;
+  position: relative;
+  min-width: 100px;
+
+  &:hover {
+    background: $brand-color;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px $brand-color;
+    padding: 0.9rem 1.5rem 0.9rem 0.9rem;
+    color: #ffffff;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+      color: #ffffff;
+    }
+  }
+}
+
+// MEDIA QUERIES FOR SERVICES CONTAINER
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .services-container {
+    flex-direction: column;
+    margin: 3rem auto;
+
+    &-box-text-button {
+      padding: 0;
+      margin: 0 auto;
+      width: 100%;
+      .headline-s {
+        font-size: 12px;
+      }
+      .btn {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+// NEWS
+.news-container {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+
+  &-box {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    height: 300px;
+    margin: 0 auto;
+
+    &-image {
+      width: 200px;
+      margin-top: 3rem;
+      img {
+        max-width: 100%;
+      }
+
+      &-text {
+        display: flex;
+        margin: 1.5rem auto;
+        width: 90%;
+      }
+      &-button {
+        position: relative;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+.btn {
+  font-family: $font-stack, monospace;
+  background: $brand-color;
+  color: $text-color;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.7rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  // width: auto;
+  position: relative;
+  min-width: 100px;
+
+  &:hover {
+    background: $brand-color;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px $brand-color;
+    padding: 0.9rem 1.5rem 0.9rem 0.9rem;
+    color: #ffffff;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+      color: #ffffff;
+    }
+  }
+}
+
+// MEDIA QUERIES FOR NEWS CONTAINER
+@media only screen and (max-width: 992px) {
+  .news-container {
+    margin: 3rem auto 7rem;
+    &-box {
+      width: 100%;
+      &-image {
+        width: 80%;
+      }
+    }
+
+    &-box-text {
+      padding: 0;
+      margin: 3rem auto;
+      width: 100%;
+      .headline-s {
+        font-size: 12px;
+      }
+      .btn {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    &-box {
+      width: 100%;
+      &-image {
+        width: 40%;
+      }
+    }
+
+    &-box-text {
+      padding: 0;
+      margin: 3rem auto;
+      width: 100%;
+      .headline-s {
+        font-size: 12px;
+      }
+      .btn {
+        font-size: 0.7em;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.headline {
+  line-height: 1;
+  color: #444;
+  padding: 2rem;
+  margin: 0 auto;
+
+  &-xl {
+    font-size: 42px;
+  }
+
+  &-l {
+    font-size: 36px;
+  }
+
+  &-m {
+    font-size: 30px;
+  }
+
+  &-s {
+    font-size: 24px;
+  }
+
+  &-xs {
+    font-size: 20px;
+  }
+
+  &-secondary {
+    font-family: $font-stack;
+  }
+}

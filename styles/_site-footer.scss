@@ -1,0 +1,76 @@
+// FOOTER
+.site-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: $brand-color;
+  &-box {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    &-logo,
+    &-talkwithus,
+    &-whereweare {
+      border: 1px solid orange;
+      width: 33%;
+      font-weight: 700;
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+    }
+    &-whereweare {
+      display: flex;
+      &-text {
+        padding: 0 3rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .site-footer {
+    max-height: auto;
+    &-box {
+      &-logo,
+      &-talkwithus,
+      &-whereweare {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 3rem;
+        border-bottom: 1px dotted gray;
+      }
+      margin: 0 auto;
+      width: 100%;
+      &-logo,
+      &-talkwithus {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-footer {
+    max-height: auto;
+    &-box {
+      flex-direction: column;
+      &-logo,
+      &-talkwithus,
+      &-whereweare {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 3rem;
+        border-bottom: 1px dotted gray;
+      }
+      margin: 0 auto;
+      width: 100%;
+      &-logo,
+      &-talkwithus {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

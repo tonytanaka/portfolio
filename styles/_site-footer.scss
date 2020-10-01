@@ -6,7 +6,7 @@
   background-color: $brand-color;
   &-box {
     display: flex;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     &-logo,
@@ -61,7 +61,7 @@
         width: 100%;
         margin: 0 auto;
         padding: 0 3rem;
-        border-bottom: 1px dotted gray;
+        border-bottom: 3px dotted gray;
       }
       margin: 0 auto;
       width: 100%;

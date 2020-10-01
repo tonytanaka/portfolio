@@ -117,7 +117,7 @@ body {
 }
 .site-footer-box {
   display: flex;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -168,7 +168,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 3rem;
-    border-bottom: 1px dotted gray;
+    border-bottom: 3px dotted gray;
   }
   .site-footer-box-logo, .site-footer-box-talkwithus {
     padding-bottom: 2rem;
@@ -191,7 +191,7 @@ h2 {
 .portfolio-container-box {
   background-color: #e0e9e0;
   display: flex;
-  width: 93%;
+  width: 94%;
   height: 400px;
   margin: 0 auto;
 }
@@ -222,7 +222,7 @@ h2 {
 .btn {
   font-family: "Roboto", sans-serif, monospace;
   background: #4d994d;
-  color: #444;
+  color: #e0e9e0;
   cursor: pointer;
   font-size: 1.5em;
   padding: 1rem;
@@ -239,12 +239,12 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 6px 15px #4d994d;
   padding: 1.5rem 3rem 1.5rem 1.5rem;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 .btn:hover::after {
   opacity: 1;
   transition: all 0.5s;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -325,7 +325,7 @@ h2 {
     top: 25px;
   }
   .portfolio-container-box-text-button .headline-s {
-    font-size: 12px;
+    font-size: 18px;
   }
   .portfolio-container-box-text-button .btn {
     font-size: 0.7em;
@@ -336,12 +336,12 @@ h2 {
   }
 
   h3 {
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     margin: 5px;
-    padding: 0 !important;
+    padding: 1rem;
   }
 }
 .services-container {
@@ -399,12 +399,12 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 6px 15px #4d994d;
   padding: 0.9rem 1.5rem 0.9rem 0.9rem;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 .btn:hover::after {
   opacity: 1;
   transition: all 0.5s;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -477,12 +477,12 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 6px 15px #4d994d;
   padding: 0.9rem 1.5rem 0.9rem 0.9rem;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 .btn:hover::after {
   opacity: 1;
   transition: all 0.5s;
-  color: #ffffff;
+  color: #f1f0f0;
 }
 
 @media only screen and (max-width: 992px) {
